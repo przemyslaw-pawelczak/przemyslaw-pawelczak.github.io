@@ -44,7 +44,7 @@ body {
 #face_image {
  border-radius: 50%; /* make image circular */
  width: 70%; 
- height: auto; 
+ height: 70%; 
  padding: 0px; /* space around element */
  float: center; /* position against the text */
  margin: 0px;
