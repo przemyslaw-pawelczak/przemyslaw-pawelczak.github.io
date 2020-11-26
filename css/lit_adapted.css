@@ -43,8 +43,8 @@ body {
 
 #face_image {
  border-radius: 50%; /* make image circular */
- width: 90%; 
- height: 90%; 
+ width: 100%; 
+ height: auto;
  padding: 0px; /* space around element */
  float: center; /* position against the text */
  margin: 0px;
@@ -97,7 +97,7 @@ body {
 
 .card{
  padding: 1em;
- border: none var(--light);
+ border: none var(--color-1);
 }
 
 .c {
