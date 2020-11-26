@@ -1,1 +1,239 @@
+/*
+* Lit v0.1
+* CSS file written by Arham Jain (https://github.com/ajusa)
+*
+* Downloaded from https://github.com/ajusa/lit on November 23, 2020
+* Adapted and revised by Przemyslaw Pawelczak (p.pawelczak@tudelft.nl) on November 26, 2020
+*/
 
+/* 
+* Icons (LinkedIn, GitHub, Twitter, Google Scholar) downloaded from https://icons8.com/ on November 25, 2020
+*/
+
+/*
+Colors: 
+#4d4dff - light blue
+#3655b3 - dark blue
+#ff4d4d - pink
+#b33636 - red
+#ffff4d - yellow
+#ffffff - white
+*/
+
+:root {
+ --font: Oxygen;
+ --line-height: 0.75em;
+ --margin: 20px;
+ --color-1: #4d4dff;
+ --color-2: #3655b3;
+ --color-3: #ff4d4d;
+ --color-4: #b33636;
+ --color-5: #ffff4d;
+ --color-6: #ffffff;
+}
+
+@font-face {
+ font-family: 'Oxygen';
+ src: url('../fonts/Oxygen/Oxygen-Regular.ttf') format('truetype');
+}
+
+body {
+ font-family: 'Oxygen'
+}
+
+#face_image {
+ border-radius: 50%; /* make image circular */
+ width: 100%; 
+ height: 100%; 
+ padding: 0px; /* space around element */
+ float: center; /* position against the text */
+ margin: 0px;
+ display: block;
+ vertical-align: middle;
+ text-align: center;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+*+* {
+ margin: .5em 0;
+}
+
+@media(min-width:35em) {
+ .col {
+ display: table-cell;
+ text-align: left;
+ vertical-align: middle;
+ }
+ .\31 { /*numbers 31--36 denotes "1--6" in column block*/
+ width: 5%;
+ }
+ .\32 {
+ width: 15%;
+ }
+ .\33 {
+ width: 22%;
+ }
+ .\34 {
+ width: 30%;
+ }
+ .\35 {
+ width: 40%;
+ }
+ .\36 {
+ width: 50%;
+ }
+ .row {
+ display: table;
+ border-spacing: 1em 0;
+ }
+}
+
+.row {
+ width: 100%;
+}
+
+.card{
+ padding: 1em;
+ border: none var(--light);
+}
+
+.c {
+ max-width: 60em;
+ padding: 1em;
+ margin: auto;
+ font: 1em/1.6 var(--font);
+}
+
+h6 {
+ font: 100 1em var(--font); /* boldness, font-size */
+ line-height: var(--line-height);
+}
+
+h5 {
+ font: 100 1.2em var(--font);
+ line-height: var(--line-height);
+}
+
+h4 {
+ font: 100 1.5em var(--font);
+ line-height: var(--line-height);
+}
+
+h3 {
+ font: 300 2.0em var(--font);
+ line-height: var(--line-height);
+}
+
+h2 {
+ font: 400 2.2em var(--font);
+ line-height: var(--line-height);
+}
+
+h1 {
+ font: 600 2.5em var(--font);
+ line-height: var(--line-height);
+}
+
+a {
+ color: var(--color-2);
+ text-decoration: none;
+}
+
+a:hover{
+ opacity: .6;
+}
+
+.add_margin_top_positive {
+ margin-top: calc(var(--margin) * 1.5);
+}
+
+.add_margin_top_negative {
+ margin-top: calc(var(--margin) * 0.5);
+}
+
+.add_margin_bottom_positive {
+ margin-bottom: calc(var(--margin) * 1.5);
+}
+
+.add_margin_bottom_negative {
+ margin-bottom: calc(var(--margin) * 0.5);
+}
+
+.text_bold {
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.text_italic {
+ text-decoration: none;
+ font-style: italic;
+}
+
+.btn {
+ padding: 0.35em;
+ text-transform: uppercase;
+ background: var(--color-5);
+ color: var(--color-1);
+ font: 0.75em var(--font);
+ border-radius: 10px;
+ font-weight: bold;
+}
+
+.btn_transparent {
+ padding: 0.35em;
+ text-transform: uppercase;
+ color: var(--color-1);
+ border: solid var(--color-1);
+ border-width: thin;
+ font: 0.75em var(--font);
+ border-radius: 10px;
+ font-weight: bold;
+}
+
+.btn_link_2 {
+ padding: 0.35em;
+ text-transform: uppercase;
+ background: var(--color-1);
+ color: var(--color-6);
+ border: none;
+ font: 0.75em var(--font);
+ border-radius: 10px;
+ text-align: center;
+ font-weight: bold;
+}
+
+.btn_link_1 {
+ padding: 0.35em;
+ text-transform: uppercase;
+ background: var(--color-3);
+ color: var(--color-6);
+ border: none;
+ font: 0.75em var(--font);
+ border-radius: 10px;
+ text-align: center;
+ font-weight: bold;
+}
+
+.btn_menu {
+ padding: 0.35em;
+ text-transform: uppercase;
+ background: var(--color-2);
+ color: var(--color-6);
+ border: none;
+ font: 1em var(--font);
+ border-radius: 10px;
+ text-align: center;
+ font-weight: bold;
+}
+
+.image_small_size{
+ height: 2.2em
+}
+
+.hfill{
+ float: right;
+ margin: 0px;
+}
