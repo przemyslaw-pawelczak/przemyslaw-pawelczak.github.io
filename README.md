@@ -1,1 +1,1 @@
-This is a repository of Przemysław Pawełczak's Personal Webpage.
+This is a repository of Przemysław Pawełczak's personal webpage.
