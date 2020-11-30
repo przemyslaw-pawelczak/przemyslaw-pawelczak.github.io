@@ -20,9 +20,22 @@ Colors:
 #ffffff - white
 */
 
+/*
+* To create single color image from a color palette
+* convert -size 800x200 xc:#4d4dff banner_4d4dff.png
+*/
+
+/*
+TODO: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
+*/
+
+/*
+89.161.255.4 - A rekord pawelczak.net
+*/
+
 :root {
  --font: Oxygen;
- --line-height: 0.75em;
+ --line-height: 0.85em;
  --margin: 20px;
  --color-1: #4d4dff;
  --color-2: #3655b3;
@@ -38,13 +51,13 @@ Colors:
 }
 
 body {
- font-family: 'Oxygen', Arial;
+ font-family: 'Oxygen'
 }
 
 #face_image {
  border-radius: 50%; /* make image circular */
  width: 100%; 
- height: auto;
+ height: auto; 
  padding: 0px; /* space around element */
  float: center; /* position against the text */
  margin: 0px;
