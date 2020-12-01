@@ -74,36 +74,6 @@ body {
  margin: .5em 0;
 }
 
-@media(min-width:35em) {
- .col {
- display: table-cell;
- text-align: left;
- vertical-align: middle;
- }
- .\31 { /*numbers 31--36 denotes "1--6" in column block*/
- width: 5%;
- }
- .\32 {
- width: 15%;
- }
- .\33 {
- width: 22%;
- }
- .\34 {
- width: 30%;
- }
- .\35 {
- width: 40%;
- }
- .\36 {
- width: 50%;
- }
- .row {
- display: table;
- border-spacing: 1em 0;
- }
-}
-
 .row {
  width: 100%;
 }
@@ -249,4 +219,44 @@ a:hover{
 .hfill{
  float: right;
  margin: 0px;
+}
+
+@media(min-width:35em) {
+ .col {
+ display: table-cell;
+ text-align: left;
+ vertical-align: middle;
+ }
+ .\31 { /*numbers 31--36 denotes "1--6" in column block*/
+ width: 5%;
+ }
+ .\32 {
+ width: 15%;
+ }
+ .\33 {
+ width: 22%;
+ }
+ .\34 {
+ width: 30%;
+ }
+ .\35 {
+ width: 40%;
+ }
+ .\36 {
+ width: 50%;
+ }
+ .row {
+ display: table;
+ border-spacing: 1em 0;
+ }
+}
+
+@media screen and (max-width: 480px) {
+.btn_link_2 {
+ padding: 0.35em;
+ text-transform: uppercase;
+ background: var(--color-6);
+ color: var(--color-4);
+
+}
 }
