@@ -6,9 +6,17 @@
 * Adapted and revised by Przemyslaw Pawelczak (p.pawelczak@tudelft.nl) on November 26, 2020
 */
 
+/* Notes */
+
 /* 
 * Icons (LinkedIn, GitHub, Twitter, Google Scholar) downloaded from https://icons8.com/ on November 25, 2020
 */
+
+/*
+* To create single color image from a color palette
+* convert -size 800x200 xc:#4d4dff banner_4d4dff.png
+*/
+
 
 /*
 Colors: 
@@ -20,21 +28,9 @@ Colors:
 #ffffff - white
 */
 
-/*
-* To create single color image from a color palette
-* convert -size 800x200 xc:#4d4dff banner_4d4dff.png
-*/
-
-/*
-TODO: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
-*/
-
-/*
-89.161.255.4 - A rekord pawelczak.net
-*/
 
 :root {
- --font: Oxygen;
+ --font: 'Noto_Sans';
  --line-height: 0.85em;
  --margin: 20px;
  --color-1: #4d4dff;
@@ -43,15 +39,17 @@ TODO: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
  --color-4: #b33636;
  --color-5: #ffff4d;
  --color-6: #ffffff;
+ --separator-before: "[";
+ --separator-after: "]";
 }
 
 @font-face {
- font-family: 'Oxygen';
- src: url('../fonts/Oxygen/Oxygen-Regular.ttf') format('truetype');
+ font-family: 'Noto_Sans';
+ src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype'); /* Downloaded from https://fonts.google.com/specimen/Ubuntu on December 1, 2020 */
 }
 
 body {
- font-family: 'Oxygen'
+ font-family: 'Noto_Sans';
 }
 
 #face_image {
@@ -155,7 +153,7 @@ a:hover{
  font-style: italic;
 }
 
-.btn {
+.btn { /*Emphasis button (light color)*/
  padding: 0.35em;
  text-transform: uppercase;
  background: var(--color-5);
@@ -165,7 +163,7 @@ a:hover{
  font-weight: bold;
 }
 
-.btn_transparent {
+.btn_transparent { /*Person's button*/
  padding: 0.35em;
  text-transform: uppercase;
  color: var(--color-1);
@@ -176,7 +174,7 @@ a:hover{
  font-weight: bold;
 }
 
-.btn_link_2 {
+.btn_link_2 { /*Emphasis button (dark color); Paper button (code, videos, etc.)*/
  padding: 0.35em;
  text-transform: uppercase;
  background: var(--color-1);
@@ -188,7 +186,7 @@ a:hover{
  font-weight: bold;
 }
 
-.btn_link_1 {
+.btn_link_1 { /*CV button*/
  padding: 0.35em;
  text-transform: uppercase;
  background: var(--color-3);
@@ -200,7 +198,7 @@ a:hover{
  font-weight: bold;
 }
 
-.btn_menu {
+.btn_menu { /*Menu button*/
  padding: 0.35em;
  text-transform: uppercase;
  background: var(--color-2);
@@ -221,42 +219,57 @@ a:hover{
  margin: 0px;
 }
 
-@media(min-width:35em) {
+@media(min-width: 35em) {
  .col {
  display: table-cell;
  text-align: left;
  vertical-align: middle;
  }
  .\31 { /*numbers 31--36 denotes "1--6" in column block*/
- width: 5%;
+  width: 5%;
  }
  .\32 {
- width: 15%;
+  width: 15%;
  }
  .\33 {
- width: 22%;
+  width: 22%;
  }
  .\34 {
- width: 30%;
+  width: 30%;
  }
  .\35 {
- width: 40%;
+  width: 40%;
  }
  .\36 {
- width: 50%;
+  width: 50%;
  }
  .row {
- display: table;
- border-spacing: 1em 0;
+  display: table;
+  border-spacing: 1em 0;
  }
 }
 
-@media screen and (max-width: 600px) {
-.btn_link_2 {
- padding: 0.35em;
- text-transform: uppercase;
- background: var(--color-6);
- color: var(--color-4);
-
-}
+@media(max-width: 61em) { /*adapt properties for small screens*/
+ .btn_link_2 {
+  background: var(--color-6);
+  color: var(--color-1);
+ }
+ .btn_transparent {
+  border: none;
+ }
+ .btn_transparent::before {
+  content: var(--separator-before);
+ }
+ .btn_transparent::after {
+  content: var(--separator-after);
+ }
+ .btn {
+  background: var(--color-6);
+ }
+ .btn::before {
+  content: var(--separator-before);
+ }
+ .btn::after {
+  content: var(--separator-after);
+ }
 }
