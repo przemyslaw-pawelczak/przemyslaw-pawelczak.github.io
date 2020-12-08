@@ -1,7 +1,5 @@
 # Przemysław Pawełczak's personal webpage repository
 
-This is a repository of Przemysław Pawełczak's personal webpage.
-
 ### Note
 
 Website is build with no reliance on external servers or frameworks. This means that the website has:
