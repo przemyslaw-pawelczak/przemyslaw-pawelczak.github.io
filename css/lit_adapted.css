@@ -3,7 +3,7 @@
 * CSS file written by Arham Jain (https://github.com/ajusa)
 *
 * Downloaded from https://github.com/ajusa/lit on November 23, 2020
-* Adapted and revised by Przemyslaw Pawelczak (p.pawelczak@tudelft.nl) on November 26, 2020
+* Adapted and revised by Przemyslaw Pawelczak (p.pawelczak@tudelft.nl) on December 8, 2020
 */
 
 /* Notes */
@@ -17,28 +17,16 @@
 * convert -size 800x200 xc:#4d4dff banner_4d4dff.png
 */
 
-
-/*
-Colors: 
-#4d4dff - light blue
-#3655b3 - dark blue
-#ff4d4d - pink
-#b33636 - red
-#ffff4d - yellow
-#ffffff - white
-*/
-
-
 :root {
  --font: 'Noto_Sans';
  --line-height: 0.85em;
  --margin: 20px;
- --color-1: #4d4dff;
- --color-2: #3655b3;
- --color-3: #ff4d4d;
- --color-4: #b33636;
- --color-5: #ffff4d;
- --color-6: #ffffff;
+ --color-1: #005DAF; /*Emphasis button (dark color); Paper button (code, videos, etc.)*/ /*Person's button*/
+ --color-2: #3B4DA8; /*Menu button*/ /*Link*/
+ --color-3: #00684A; /*CV button*/
+ --color-4: #7D84A8; /*NOT USED YET*/
+ --color-5: #81358A; /*Emphasis button (light color)*/
+ --color-6: #FFFFFF;
  --separator-before: "[";
  --separator-after: "]";
 }
@@ -153,22 +141,16 @@ a:hover{
  font-style: italic;
 }
 
+.text_footer {
+ text-decoration: none;
+ font-size: 0.8em
+}
+
 .btn { /*Emphasis button (light color)*/
  padding: 0.35em;
  text-transform: uppercase;
  background: var(--color-5);
- color: var(--color-1);
- font: 0.75em var(--font);
- border-radius: 10px;
- font-weight: bold;
-}
-
-.btn_transparent { /*Person's button*/
- padding: 0.35em;
- text-transform: uppercase;
- color: var(--color-1);
- border: solid var(--color-1);
- border-width: thin;
+ color: var(--color-6);
  font: 0.75em var(--font);
  border-radius: 10px;
  font-weight: bold;
@@ -195,6 +177,17 @@ a:hover{
  font: 0.75em var(--font);
  border-radius: 10px;
  text-align: center;
+ font-weight: bold;
+}
+
+.btn_transparent { /*Person's button*/
+ padding: 0.35em;
+ text-transform: uppercase;
+ color: var(--color-1);
+ border: solid var(--color-1);
+ border-width: thin;
+ font: 0.75em var(--font);
+ border-radius: 10px;
  font-weight: bold;
 }
 
