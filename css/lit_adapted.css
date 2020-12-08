@@ -257,6 +257,7 @@ a:hover{
   content: var(--separator-after);
  }
  .btn {
+  color: var(--color-5);
   background: var(--color-6);
  }
  .btn::before {
